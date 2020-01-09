@@ -8,4 +8,9 @@
   <ItemGroup>
   </ItemGroup>
 
+
+  <ItemGroup>
+    <PackageReference Include="TTRider.Aws.Beanstalk.Configuration" Version="1.0.1" />
+  </ItemGroup>
+
 </Project>
