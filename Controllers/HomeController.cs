@@ -12,19 +12,15 @@ namespace AspNetMvc.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IConfiguration _configuration;
-
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger, IConfiguration configuration)
+        public HomeController(ILogger<HomeController> logger)
         {
-            _configuration = configuration;
             _logger = logger;
         }
 
         public IActionResult Index()
         {
-            ViewBag.Environment = _configuration.GetValue<string>("Environment");
             return View();
         }
 
